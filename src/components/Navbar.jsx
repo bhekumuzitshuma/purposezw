@@ -68,16 +68,16 @@ const Navbar = () => {
                 </ul>
               </li>
               <li>
-                <a>Investment Process</a>
+                <a href="/investment-process">Investment Process</a>
               </li>
               <li>
-                <a>Perfomance</a>
+                <a href="/prices">Perfomance</a>
               </li>
               <li>
-                <a>Forms</a>
+                <a href="/forms">Forms</a>
               </li>
               <li>
-                <a>Contact</a>
+                <a href="/contact">Contact</a>
               </li>
             </ul>
           </div>
@@ -132,13 +132,13 @@ const Navbar = () => {
               </details>
             </li>
             <li>
-              <a>Investment Process</a>
+              <a href="/investment-process">Investment Process</a>
             </li>
             <li>
-              <a>Perfomance</a>
+              <a href="/prices">Perfomance</a>
             </li>
             <li>
-              <a>Forms</a>
+              <a href="/forms">Forms</a>
             </li>
           </ul>
         </div>
