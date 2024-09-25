@@ -31,16 +31,13 @@ const Navbar = () => {
                 <a>About</a>
                 <ul className="p-2">
                   <li>
-                    <a>Board of Directors</a>
+                    <a href="/our-team">Our Team</a>
                   </li>
                   <li>
-                    <a>Our Team</a>
+                    <a href="/about-us">About Us</a>
                   </li>
                   <li>
-                    <a>About Us</a>
-                  </li>
-                  <li>
-                    <a>Vunani</a>
+                    <a href="/vunani">Vunani</a>
                   </li>
                 </ul>
               </li>
@@ -92,16 +89,13 @@ const Navbar = () => {
                 <summary>About</summary>
                 <ul className="p-2 w-[200px] border">
                   <li>
-                    <a>Board of Directors</a>
+                    <a href="/our-team">Our Team</a>
                   </li>
                   <li>
-                    <a>Our Team</a>
+                    <a href="/about-us">About Us</a>
                   </li>
                   <li>
-                    <a>About Us</a>
-                  </li>
-                  <li>
-                    <a>Vunani</a>
+                    <a href="/vunani">Vunani</a>
                   </li>
                 </ul>
               </details>

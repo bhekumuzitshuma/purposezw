@@ -109,7 +109,7 @@ const FormsPage = () => {
                         <a
                           href={form.file}
                           download
-                          className="text-teal-600 hover:text-teal-800 flex items-center"
+                          className="text-teal-600 hover:text-amber-800 flex items-center"
                         >
                           <FaFileDownload className="mr-1" /> Download
                         </a>
