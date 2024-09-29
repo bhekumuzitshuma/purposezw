@@ -137,7 +137,9 @@ const Navbar = () => {
           </ul>
         </div>
         <div className="navbar-end space-x-1">
-          <a className="btn btn-sm hidden md:flex bg-teal-200">Contact</a>
+          <a href="/contact" className="btn btn-sm hidden md:flex bg-teal-200">
+            Contact
+          </a>
           <a className="btn btn-sm bg-teal-200">
             <RiSearch2Line />
           </a>
