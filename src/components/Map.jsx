@@ -17,9 +17,9 @@ const Map = ({ coordinates }) => {
     map.addControl(new mapboxgl.NavigationControl(), "top-left");
 
     // Add a marker at the specified coordinates
-    new mapboxgl.Marker()
-      .setLngLat([31.032853051158124, -17.785523317426108]) // [lng, lat]-17.785523317426108, 31.032853051158124
-      .addTo(map);
+    // new mapboxgl.Marker()
+    //   .setLngLat([31.032853051158124, -17.785523317426108]) // [lng, lat]-17.785523317426108, 31.032853051158124
+    //   .addTo(map);
 
     return () => map.remove();
   }, [coordinates]);
