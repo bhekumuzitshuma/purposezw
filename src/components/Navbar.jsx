@@ -1,5 +1,5 @@
-import React from "react";
 import { RiSearch2Line } from "react-icons/ri";
+import React, { useState } from "react";
 
 const Navbar = () => {
   return (
@@ -42,27 +42,7 @@ const Navbar = () => {
                 </ul>
               </li>
               <li>
-                <a>Products & Services</a>
-                <ul className="p-2">
-                  <li>
-                    <a>Fixed Income Portfolio Management</a>
-                  </li>
-                  <li>
-                    <a>Cash Management</a>
-                  </li>
-                  <li>
-                    <a>Investment Advisory Services</a>
-                  </li>
-                  <li>
-                    <a>Alternative Trading Platform</a>
-                  </li>
-                  <li>
-                    <a>Property Fund</a>
-                  </li>
-                  <li>
-                    <a>Stock Market Portfolio</a>
-                  </li>
-                </ul>
+                <a href="/services">Products & Services</a>
               </li>
               <li>
                 <a href="/investment-process">Investment Process</a>
@@ -101,29 +81,7 @@ const Navbar = () => {
               </details>
             </li>
             <li>
-              <details>
-                <summary>Products & Services</summary>
-                <ul className="p-2 border w-[300px]">
-                  <li>
-                    <a>Fixed Income Portfolio Management</a>
-                  </li>
-                  <li>
-                    <a>Cash Management</a>
-                  </li>
-                  <li>
-                    <a>Investment Advisory Services</a>
-                  </li>
-                  <li>
-                    <a>Alternative Trading Platform</a>
-                  </li>
-                  <li>
-                    <a>Property Fund</a>
-                  </li>
-                  <li>
-                    <a>Stock Market Portfolio</a>
-                  </li>
-                </ul>
-              </details>
+              <a href="/services">Products & Services</a>
             </li>
             <li>
               <a href="/investment-process">Investment Process</a>
@@ -140,7 +98,8 @@ const Navbar = () => {
           <a href="/contact" className="btn btn-sm hidden md:flex bg-teal-200">
             Contact
           </a>
-          <a className="btn btn-sm bg-teal-200">
+          {/* Search Icon */}
+          <a href="/search" className="btn btn-sm bg-teal-200">
             <RiSearch2Line />
           </a>
         </div>
