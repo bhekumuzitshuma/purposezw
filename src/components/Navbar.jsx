@@ -78,7 +78,7 @@ const Navbar = () => {
               </li>
             </ul>
           </div>
-          <a className="btn btn-ghost text-xl">
+          <a href="/" className="btn btn-ghost text-xl">
             <img src="/logo_a.png" className="w-[160px]" alt="" />
           </a>
         </div>

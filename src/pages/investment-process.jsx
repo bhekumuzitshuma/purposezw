@@ -8,15 +8,22 @@ import {
   FaShieldAlt,
   FaRegLightbulb,
 } from "react-icons/fa";
+import HeroComp from "@/components/HeroComp";
 
 const InvestmentProcess = () => {
+  const breadcrumbs = [
+    { href: "/", label: "Home" },
+    { href: "/investment-process", label: "Our Investment Process" },
+  ];
   return (
     <Layout>
+      <HeroComp
+        image="slider-3-2.jpg"
+        title="Our Investment Process"
+        tagline="Your success starts here."
+        breadcrumbs={breadcrumbs}
+      />
       <div className="p-6 max-w-5xl mx-auto">
-        <h1 className="text-4xl font-bold text-center ">
-          Our Investment Process
-        </h1>
-
         <img
           src="/investment-process.png"
           alt="Investment Process"
