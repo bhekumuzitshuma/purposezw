@@ -3,8 +3,8 @@ import React, { useState } from "react";
 
 const Navbar = () => {
   return (
-    <div className="border-b">
-      <div className="navbar z-50 max-w-6xl mx-auto bg-base-100">
+    <div className=" bg-teal-950">
+      <div className="navbar z-50 max-w-6xl mx-auto text-white bg-teal-950">
         <div className="navbar-start">
           <div className="dropdown">
             <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -64,42 +64,83 @@ const Navbar = () => {
         </div>
         <div className="navbar-center hidden lg:flex">
           <ul className="menu z-50 menu-horizontal px-1">
-            <li>
+            <li className="hover:bg-teal-600/20  rounded-none ease-in-out transition duration-200">
               <details>
                 <summary>About</summary>
-                <ul className="p-2 w-[200px] border">
+                <ul className="p-2 w-[200px]  text-black border">
                   <li>
-                    <a href="/our-team">Our Team</a>
+                    <a
+                      href="/our-team"
+                      className="hover:text-teal-100 hover:bg-teal-950"
+                    >
+                      Our Team
+                    </a>
                   </li>
                   <li>
-                    <a href="/about-us">About Us</a>
+                    <a
+                      href="/about-us"
+                      className="hover:text-teal-100 hover:bg-teal-950"
+                    >
+                      About Us
+                    </a>
                   </li>
                   <li>
-                    <a href="/vunani">Vunani</a>
+                    <a
+                      href="/vunani"
+                      className="hover:text-teal-100 hover:bg-teal-950"
+                    >
+                      Vunani
+                    </a>
                   </li>
                 </ul>
               </details>
             </li>
             <li>
-              <a href="/services">Products & Services</a>
+              <a
+                href="/services"
+                className="hover:bg-teal-600/20  rounded-none ease-in-out transition duration-200"
+              >
+                Products & Services
+              </a>
             </li>
             <li>
-              <a href="/investment-process">Investment Process</a>
+              <a
+                href="/investment-process"
+                className="hover:bg-teal-600/20  rounded-none ease-in-out transition duration-200"
+              >
+                Investment Process
+              </a>
             </li>
             <li>
-              <a href="/prices">Perfomance</a>
+              <a
+                href="/prices"
+                className="hover:bg-teal-600/20  rounded-none ease-in-out transition duration-200"
+              >
+                Perfomance
+              </a>
             </li>
             <li>
-              <a href="/forms">Forms</a>
+              <a
+                href="/forms"
+                className="hover:bg-teal-600/20  rounded-none ease-in-out transition duration-200"
+              >
+                Forms
+              </a>
             </li>
           </ul>
         </div>
         <div className="navbar-end space-x-1">
-          <a href="/contact" className="btn btn-sm hidden md:flex bg-teal-200">
+          <a
+            href="/contact"
+            className="btn btn-sm rounded-none btn-outline text-teal-100 hover:bg-amber-700 hidden md:flex "
+          >
             Contact
           </a>
           {/* Search Icon */}
-          <a href="/search" className="btn btn-sm bg-teal-200">
+          <a
+            href="/search"
+            className="btn btn-sm rounded-none btn-outline text-teal-100 hover:bg-amber-700"
+          >
             <RiSearch2Line />
           </a>
         </div>

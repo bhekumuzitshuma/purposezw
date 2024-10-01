@@ -19,7 +19,7 @@ export default function Home() {
       </section>
 
       {/* About Section */}
-      <section className="">
+      <section className="bg-teal-950">
         <AboutSection />
       </section>
 
@@ -27,8 +27,10 @@ export default function Home() {
       <section></section>
 
       {/* Contact Details Section */}
-      <section className="max-w-5xl mx-auto ">
-        <Contact />
+      <section className="bg-teal-100 ">
+        <div className="max-w-5xl mx-auto">
+          <Contact />
+        </div>
       </section>
     </Layout>
   );

@@ -7,6 +7,7 @@ import {
 import { RiChatPollFill } from "react-icons/ri";
 import { GiCash } from "react-icons/gi";
 import { FaPiggyBank } from "react-icons/fa6";
+import { motion } from "framer-motion";
 
 const ServicesSection = () => {
   const features = [
@@ -65,9 +66,28 @@ const ServicesSection = () => {
           </p>
         </div>
         <div className="mx-auto mt-16 max-w-2xl sm:mt-20 lg:mt-24 lg:max-w-4xl">
-          <dl className="grid max-w-xl grid-cols-1 gap-x-8 gap-y-10 lg:max-w-none lg:grid-cols-2 lg:gap-y-16">
+          <motion.dl
+            initial="hidden"
+            animate="visible"
+            variants={{
+              hidden: {
+                transition: { staggerChildren: 0.5 },
+              },
+              visible: {
+                transition: { staggerChildren: 0.5 },
+              },
+            }}
+            className="grid max-w-xl grid-cols-1 gap-x-8 gap-y-10 lg:max-w-none lg:grid-cols-2 lg:gap-y-16"
+          >
             {features.map((feature) => (
-              <div key={feature.name} className="relative pl-16">
+              <motion.div
+                key={feature.name}
+                variants={{
+                  hidden: { opacity: 0, y: 20 },
+                  visible: { opacity: 1, y: 0 },
+                }}
+                className="relative pl-16"
+              >
                 <dt className="text-base font-semibold leading-7 text-gray-900">
                   <div className="absolute left-0 top-0 flex h-10 w-10 items-center justify-center rounded-lg bg-teal-600">
                     <feature.icon
@@ -80,9 +100,9 @@ const ServicesSection = () => {
                 <dd className="mt-2 text-base leading-7 text-gray-600">
                   {feature.description}
                 </dd>
-              </div>
+              </motion.div>
             ))}
-          </dl>
+          </motion.dl>
         </div>
       </div>
     </div>
