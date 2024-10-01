@@ -7,9 +7,11 @@ import {
 import { RiChatPollFill } from "react-icons/ri";
 import { GiCash } from "react-icons/gi";
 import { FaPiggyBank } from "react-icons/fa6";
-import { motion } from "framer-motion";
+import { motion, useInView } from "framer-motion";
 
 const ServicesSection = () => {
+  const ref = React.useRef(null);
+  const isInView = useInView(ref, { once: false });
   const features = [
     {
       name: "Cash Management",
@@ -65,16 +67,19 @@ const ServicesSection = () => {
             expert guidance.
           </p>
         </div>
-        <div className="mx-auto mt-16 max-w-2xl sm:mt-20 lg:mt-24 lg:max-w-4xl">
+        <div
+          ref={ref}
+          className="mx-auto mt-16 max-w-2xl sm:mt-20 lg:mt-24 lg:max-w-4xl"
+        >
           <motion.dl
             initial="hidden"
-            animate="visible"
+            animate={isInView ? "visible" : "hidden"}
             variants={{
               hidden: {
-                transition: { staggerChildren: 0.5 },
+                transition: { staggerChildren: 0.3 },
               },
               visible: {
-                transition: { staggerChildren: 0.5 },
+                transition: { staggerChildren: 0.3 },
               },
             }}
             className="grid max-w-xl grid-cols-1 gap-x-8 gap-y-10 lg:max-w-none lg:grid-cols-2 lg:gap-y-16"
