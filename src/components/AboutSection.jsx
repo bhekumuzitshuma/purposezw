@@ -4,6 +4,12 @@ import { motion, useInView } from "framer-motion";
 const AboutSection = () => {
   const ref = React.useRef(null);
   const isInView = useInView(ref, { once: true });
+
+  const refTop = React.useRef(null);
+  const refBottom = React.useRef(null);
+  const isInViewTop = useInView(refTop, { once: false });
+  const isInViewBottom = useInView(refBottom, { once: false });
+
   return (
     <motion.div
       ref={ref}
@@ -32,9 +38,10 @@ const AboutSection = () => {
           </div>
           <div className="grid grid-cols-2 gap-4 mt-8">
             <motion.div
+              ref={refTop}
               initial={{ opacity: 0, y: -50 }} // Start above
-              animate={{ opacity: 1, y: 0 }} // Slide down to original position
-              transition={{ duration: 5, ease: "easeInOut" }}
+              animate={isInViewTop ? { opacity: 1, y: 0 } : {}} // Slide down to original position
+              transition={{ duration: 0.5, ease: "easeInOut" }}
             >
               <img
                 className="w-full rounded-lg"
@@ -43,9 +50,10 @@ const AboutSection = () => {
               />
             </motion.div>
             <motion.div
+              ref={refBottom}
               initial={{ opacity: 0, y: 50 }} // Start below
-              animate={{ opacity: 1, y: 0 }} // Slide up to original position
-              transition={{ duration: 5, ease: "easeInOut" }}
+              animate={isInViewBottom ? { opacity: 1, y: 0 } : {}} // Slide up to original position
+              transition={{ duration: 0.5, ease: "easeInOut" }}
             >
               <img
                 className="mt-4 w-full lg:mt-10 rounded-lg"
