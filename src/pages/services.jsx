@@ -16,7 +16,7 @@ const Services = () => {
         tagline="Your success starts here."
         breadcrumbs={breadcrumbs}
       />
-      <div className="py-10 max-w-5xl mx-auto">
+      <div className="py-10 max-w-6xl mx-auto">
         <TabsComponent />
       </div>
     </Layout>

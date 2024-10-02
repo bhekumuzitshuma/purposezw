@@ -31,13 +31,13 @@ const Navbar = () => {
                 <a>About</a>
                 <ul className="p-2">
                   <li>
-                    <a href="/our-team">Our Team</a>
-                  </li>
-                  <li>
                     <a href="/about-us">About Us</a>
                   </li>
                   <li>
                     <a href="/vunani">Vunani</a>
+                  </li>
+                  <li>
+                    <a href="/our-team">Our Team</a>
                   </li>
                 </ul>
               </li>
@@ -70,14 +70,6 @@ const Navbar = () => {
                 <ul className="p-2 w-[200px]  text-black border">
                   <li>
                     <a
-                      href="/our-team"
-                      className="hover:text-teal-100 hover:bg-teal-950"
-                    >
-                      Our Team
-                    </a>
-                  </li>
-                  <li>
-                    <a
                       href="/about-us"
                       className="hover:text-teal-100 hover:bg-teal-950"
                     >
@@ -90,6 +82,14 @@ const Navbar = () => {
                       className="hover:text-teal-100 hover:bg-teal-950"
                     >
                       Vunani
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="/our-team"
+                      className="hover:text-teal-100 hover:bg-teal-950"
+                    >
+                      Our Team
                     </a>
                   </li>
                 </ul>

@@ -1,13 +1,21 @@
 import Layout from "@/components/Layout";
 import React from "react";
+import HeroComp from "@/components/HeroComp";
 
 const PricingPage = () => {
+  const breadcrumbs = [
+    { href: "/", label: "Home" },
+    { href: "/prices", label: "Fees" },
+  ];
   return (
     <Layout>
-      <div className="flex flex-col items-center justify-center">
-        <h1 className="text-3xl uppercase mb-6 p-6 font-light w-full text-center bg-teal-50">
-          Fees
-        </h1>
+      <HeroComp
+        image="slider-1.jpg"
+        title="About Us"
+        tagline="Our Pricing Structure"
+        breadcrumbs={breadcrumbs}
+      />
+      <div className="flex mt-6 flex-col items-center justify-center">
         <div className="border mb-6  shadow-md rounded-lg p-8 max-w-xl w-full">
           <h2 className="text-2xl font-semibold mb-4">Equities</h2>
           <table className="min-w-full border-collapse">
@@ -46,7 +54,10 @@ const PricingPage = () => {
           <h2 className="text-2xl font-semibold mt-6">Fixed Interest</h2>
           <p className="mt-2">Performance Fee of 10% of value created.</p>
 
-          <a href="" className="btn btn-accent  text-black btn-block mt-6">
+          <a
+            href=""
+            className="btn bg-teal-950 hover:bg-teal-100 hover:text-black rounded-none text-white btn-block mt-6"
+          >
             Contact Us
           </a>
         </div>
