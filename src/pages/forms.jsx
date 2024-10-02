@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import Layout from "@/components/Layout";
 import { FaFileDownload, FaSearch, FaFolderOpen } from "react-icons/fa";
+import HeroComp from "@/components/HeroComp";
 
 const formsData = [
   { title: "Stock Market Mandate", file: "/forms/Stock Market Mandate.pdf" },
@@ -32,48 +33,20 @@ const FormsPage = () => {
   const filteredForms = formsData.filter((form) =>
     form.title.toLowerCase().includes(searchTerm.toLowerCase())
   );
-
+  const breadcrumbs = [
+    { href: "/", label: "Home" },
+    { href: "/forms", label: "Downloadable Forms" },
+  ];
   return (
     <Layout>
       <div className="">
-        {/* Hero Section */}
-        <div className="bg-teal-600">
-          <div className="max-w-6xl mx-auto text-white px-6 py-6 mb-6 flex items-center">
-            <FaFolderOpen className="text-5xl mr-4" />
-            <div>
-              <h1 className="text-4xl font-bold">Downloadable Forms</h1>
-              <p className="mt-2">
-                Access and download all necessary forms easily.
-              </p>
-            </div>
-          </div>
-        </div>
-
-        {/* Breadcrumbs */}
-        <div className="max-w-5xl flex items-center justify-center md:justify-start mx-auto">
-          <div className="breadcrumbs text-sm mb-4">
-            <ul className="flex space-x-2">
-              <li>
-                <a
-                  href="/"
-                  className="text-teal-600 hover:underline hover:text-amber-800"
-                >
-                  Home
-                </a>
-              </li>
-              <li>
-                <a
-                  href="/forms"
-                  className="text-teal-600 hover:underline hover:text-amber-800"
-                >
-                  Forms
-                </a>
-              </li>
-            </ul>
-          </div>
-        </div>
-
-        <div className="max-w-5xl mx-auto mb-8 px-2 md:px-0">
+        <HeroComp
+          image="slider-3-2.jpg"
+          title="About Us"
+          tagline="Search and download the form you're looking for"
+          breadcrumbs={breadcrumbs}
+        />
+        <div className="max-w-5xl mt-8 mx-auto mb-8 px-2 md:px-0">
           {/* Search Bar */}
           <div className="flex items-center mb-6">
             <div className="relative w-full">
