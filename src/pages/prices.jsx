@@ -11,7 +11,7 @@ const PricingPage = () => {
     <Layout>
       <HeroComp
         image="slider-1.jpg"
-        title="About Us"
+        title="Fees"
         tagline="Our Pricing Structure"
         breadcrumbs={breadcrumbs}
       />
@@ -55,7 +55,7 @@ const PricingPage = () => {
           <p className="mt-2">Performance Fee of 10% of value created.</p>
 
           <a
-            href=""
+            href="/contact"
             className="btn bg-teal-950 hover:bg-teal-100 hover:text-black rounded-none text-white btn-block mt-6"
           >
             Contact Us

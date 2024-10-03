@@ -56,7 +56,7 @@ const Search = () => {
           tagline="Browse through our site to learn more about our products and services"
           breadcrumbs={breadcrumbs}
         />
-        <div className="py-10 max-w-6xl mx-auto">
+        <div className="py-10 px-3 max-w-6xl mx-auto">
           <form onSubmit={handleSearch} className="max-w-md mx-auto">
             <label
               for="default-search"
