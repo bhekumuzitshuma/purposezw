@@ -18,7 +18,7 @@ const Hero = () => {
                   Rated #1
                 </p>
               </div>
-              <h2 className="text-center tracking-wide max-w-lg mb-6 font-sans text-3xl font-bold leading-none text-white sm:text-4xl md:mx-auto">
+              <h2 className="text-center tracking-wide max-w-lg mb-6 text-3xl font-bold leading-none text-white sm:text-4xl md:mx-auto">
                 <span className="relative inline-block">
                   <svg
                     viewBox="0 0 52 24"
