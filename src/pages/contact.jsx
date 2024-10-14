@@ -43,7 +43,7 @@ const Contact = () => {
       </div>
       <div className="flex max-w-6xl mx-auto md:pb-10 h-96 flex-col">
         <p className="text-center bg-amber-800 font-black text-white">
-          1 Howden close Avondale, Harare
+          7 Cambridge road Avondale, Harare
         </p>
         <Map coordinates={coordinates} />
       </div>

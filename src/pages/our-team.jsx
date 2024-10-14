@@ -33,19 +33,19 @@ const teamMembers = [
       { icon: <FaGithub />, link: "#" },
     ],
   },
-  {
-    name: "Ellistas B. Gapu",
-    title: "Compliance Officer",
-    description:
-      "Ellistas is responsible for ensuring that the company adheres to regulatory standards...",
-    image: "/team3.jpg", // Update to your image path
-    socialLinks: [
-      { icon: <FaFacebook />, link: "#" },
-      { icon: <FaTwitter />, link: "#" },
-      { icon: <FaLinkedin />, link: "#" },
-      { icon: <FaGithub />, link: "#" },
-    ],
-  },
+  // {
+  //   name: "Ellistas B. Gapu",
+  //   title: "Compliance Officer",
+  //   description:
+  //     "Ellistas is responsible for ensuring that the company adheres to regulatory standards...",
+  //   image: "/team3.jpg", // Update to your image path
+  //   socialLinks: [
+  //     { icon: <FaFacebook />, link: "#" },
+  //     { icon: <FaTwitter />, link: "#" },
+  //     { icon: <FaLinkedin />, link: "#" },
+  //     { icon: <FaGithub />, link: "#" },
+  //   ],
+  // },
   {
     name: "Nomsa J. Chigwada",
     title: "Business Development Manager",

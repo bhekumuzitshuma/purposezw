@@ -75,7 +75,7 @@ const Hero = () => {
                 <CiLocationOn size={23} className="text-[#92692d]" />
               </div>
               <p className="font-bold tracking-wide text-gray-800">
-                1 Howden Close <br />
+                7 Cambridge road <br />
                 Avondale, Harare
               </p>
             </div>

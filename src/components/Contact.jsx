@@ -24,7 +24,7 @@ const Contact = () => {
           />
         </svg>
       ),
-      contact: "1 Howden Close Avondale, Harare",
+      contact: "7 Cambridge road Avondale, Harare",
       title: "Our office",
     },
     {
