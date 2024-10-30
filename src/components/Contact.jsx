@@ -64,7 +64,7 @@ const Contact = () => {
           />
         </svg>
       ),
-      contact: "Support@example.com",
+      contact: "pam@purpose.co.zw",
       title: "Email",
     },
   ];
