@@ -12,7 +12,7 @@ export default function Home() {
       {/* SEO Meta Tags */}
       <Head>
         {/* Primary Meta Tags */}
-        <title>Your Site Title - Home</title>
+        <title>Home</title>
         <meta name="description" content="Purpose Vunani Asset Management works closely with Vunani Fund Managers and Vunani Private Clients who offer a range of multi-asset, specialist equity, property and bond funds in RSA, to bring the full range of products to Zimbabwe." />
         <meta name="keywords" content="asset, management, purpose, vunani, zimbabwe" />
         <meta name="author" content="Purpose Vunani Asset Management" />
